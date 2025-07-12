@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1584143975451-cb8cce96f01e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
   margin: 0;
@@ -10,24 +10,26 @@ body {
 
 header {
   text-align: center;
-  background-color: rgba(0, 0, 32, 0.75);
-  padding: 50px 20px;
-  color: #00ffff;
+  background-color: rgba(0, 0, 32, 0.7);
+  padding: 60px 20px;
+  color: #00e6e6;
 }
 
 nav a {
-  color: #ffccff;
-  margin: 0 10px;
+  color: #ffe4ff;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
+  padding: 5px 0;
 }
 
 section {
-  background-color: rgba(0, 0, 32, 0.7);
-  border-radius: 12px;
-  margin: 20px;
-  padding: 40px 20px;
-  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+  background-color: rgba(0, 0, 32, 0.6);
+  border-radius: 14px;
+  margin: 40px 5%;
+  padding: 50px 30px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
 }
 
 a {
@@ -47,5 +49,31 @@ footer {
   display: inline-block;
   margin: 5px 10px;
   color: #ffccff;
+  font-weight: bold;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+input, button {
+  padding: 12px;
+  margin: 10px;
+  width: 80%;
+  max-width: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+input {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+button {
+  background-color: #00e6e6;
+  color: #000;
+  cursor: pointer;
   font-weight: bold;
 }
