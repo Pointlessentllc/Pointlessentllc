@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="overlay-box">
+  <header class="glow-box">
     <h1>Pointless Entertainment LLC</h1>
     <p>A vibrant, mythical brand universe powered by creativity & culture.</p>
     <nav>
@@ -20,32 +20,32 @@
     </nav>
   </header>
 
-  <section id="about" class="overlay-box">
+  <section id="about" class="glow-box">
     <h2>About Us</h2>
     <p>Pointless Entertainment unites branding, rare collectibles, and media under one mythical creative force.</p>
   </section>
 
-  <section id="logos" class="overlay-box">
+  <section id="logos" class="glow-box">
     <h2>PE Logos</h2>
     <p>AI-assisted logo design crafted for creators and streamers. Bold, fast, and visionary.</p>
     <a href="https://www.fiverr.com/">Order on Fiverr</a>
   </section>
 
-  <section id="prints" class="overlay-box">
+  <section id="prints" class="glow-box">
     <h2>PE Print Works</h2>
     <p>Merch made magical — apparel, mugs, business cards & more.</p>
     <a href="https://www.etsy.com/">Shop on Etsy</a>
     <a href="https://forms.gle/">Submit Custom Order</a>
   </section>
 
-  <section id="rares" class="overlay-box">
+  <section id="rares" class="glow-box">
     <h2>PE Rare TCG</h2>
     <p>From TCG to vintage, we collect and connect the rare and powerful.</p>
     <a href="https://www.tcgplayer.com/">Shop on TCGplayer</a>
     <a href="https://ebay.us/m/JjICth">Visit eBay Store</a>
   </section>
 
-  <section id="media" class="overlay-box">
+  <section id="media" class="glow-box">
     <h2>🎧 Podcasts</h2>
     <h3>Rhylee’s Red Couch</h3>
     <p>Real talk on healing and womanhood. Host: Rhylee</p>
@@ -55,17 +55,20 @@
     <a href="https://open.spotify.com/show/6DYCFTWdqPeHoPnyyQzzT6?si=ApaaOlCiTa25f-LK5EsmfA">Stream After Dark</a>
   </section>
 
-  <section id="signup" class="overlay-box">
-    <h2>Sign Up for Exclusive Access</h2>
-    <p>Join our digital inner circle for free gifts, resources, and early access.</p>
-    <form action="https://formspree.io/f/mleqwnzp" method="POST">
+  <section id="signup" class="glow-box">
+    <h2>🎁 Sign Up for a Free Digital Book</h2>
+    <p>Join the Pointless movement — get a FREE digital book just for signing up!</p>
+    <form id="signupForm">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <button type="submit">Join the Movement</button>
+      <button type="submit">Get My Free Book</button>
     </form>
+    <p id="confirmation" style="display:none; margin-top:20px;">
+      ✅ Thank you! <a href="freebook.pdf" download>Click here to download your free book.</a>
+    </p>
   </section>
 
-  <footer class="overlay-box">
+  <footer class="glow-box">
     <p>&copy; 2025 Pointless Entertainment LLC</p>
     <div class="socials">
       <a href="https://www.instagram.com/pointlessentertainment/" target="_blank">📸 Pointless IG</a>
@@ -74,5 +77,15 @@
       <a href="https://x.com/Rhyleesredcouch?t=Jre7wfq36yD6nPy0ewwsfg&s=09" target="_blank">✖ Rhylee's Red Couch</a>
     </div>
   </footer>
+
+  <script>
+    const form = document.getElementById("signupForm");
+    const confirmText = document.getElementById("confirmation");
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      confirmText.style.display = "block";
+      form.reset();
+    });
+  </script>
 </body>
 </html>
