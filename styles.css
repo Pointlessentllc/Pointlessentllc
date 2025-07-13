@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://pointlessentllc.github.io/assets/aurora-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 2em auto;
+  padding: 2em;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+h1, h2, h3 {
+  text-align: center;
+  color: #00ffff;
+}
+p {
+  line-height: 1.6;
+}
+.button {
+  background-color: #00ffff;
+  color: #000;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+}
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  margin: 0 10px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 0.9em;
+}
+#music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
